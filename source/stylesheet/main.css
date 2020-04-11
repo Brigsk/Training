@@ -55,27 +55,60 @@ table {
 */
 
 body {
-  width: 288px;
-  height: 490px;
   font-family: 'Roboto', sans-serif;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 288px;
 }
 section{
-  display: inline-block;
-  width: 510px;
-  height: 38px;
+  display: flex;
+  flex-direction: column;
 
 }
 table {
-  margin: 25px;
-  width: 100%;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
 }
 header{
-  width: 510px;
-  height: 38px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
+tbody{
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+
+  position: relative;
+  width: 240px;
+  height: 82px;
+}
+tr{
+  width: 240px;
+  height: 18px;
+  left: 0px;
+  top: 5px;
+}
+td{
+  width: 120px;
+  height: 18px;
+  left: 0px;
+  top: 5px;
+}
+footer{
+  width: 288px;
+  height: 80px;
+  background: #CF0909;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.foot{
+  flex-direction: left;
+  align-items: center;
+}
+
 /*
   ========================================
   Сетка
@@ -197,10 +230,10 @@ h4 {
 }
 
 h5 {
-  color: #a9b2b9;
-  font-size: 14px;
+  font-size: 9px;
   font-weight: 400;
   text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 strong {
@@ -210,8 +243,23 @@ cite, em {
   font-style: italic;
 }
 caption {
-  float: left;
+width: 110px;
+height: 22px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+align-items: left;
+margin-top: 16px;
 }
+
+th{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 8px;
+}
+
 td{
   font-style: normal;
   font-weight: normal;
@@ -226,6 +274,12 @@ td{
 .logo{
   margin: 28px;
 }
+.photo{
+  width: 41.14px;
+  height: 41px;
+  display: flex;
+  flex-direction: left;
+}
 
 
 /*
@@ -235,10 +289,6 @@ td{
 */
 #order_table{
   display: flex;
-  flex-direction: column;
-  padding: 5px 0px;
-
-  position: relative;
+  align-items: center;
+  align-content: flex-start;
 }
-
-

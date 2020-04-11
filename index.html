@@ -10,7 +10,7 @@
 	<header>
 		<h1 class="logo"><img src="source\logo.png"></h1>
 		<h1>Здравствуйте!</h1>
-		<h2>Мы получили ваш заказ № 123456789 от 27.03.2020 10:54</h2>
+		<h2>Мы получили ваш заказ № 123456789<br> от 27.03.2020 10:54</h2>
 	</header>
 	<section>
 		<table id="order_table">
@@ -31,8 +31,8 @@
 				<td>order_paymenttype</td>
 			</tr>
 		</table>
+		<div id="zakaz"> <h4> Ваш заказ: </h4></div>
 		<table id="order_items">
-			<caption><h3>Ваш заказ</h3></caption>
 			<tr>
 			<th scope="col">Товар</th>
 			<th scope="col">Цена</th>
@@ -58,9 +58,9 @@
 		</table>
 	</section>
 	<footer>
-		<img src="source/tel.png">
-		<h3>Если у вас остались вопросы позвоните нам<br>
-		8 (495) 431-71-11</h3>
+		<img src="source/tel.png", id="phone">
+		<div id="foot"><h5>Если у вас остались вопросы позвоните нам<br>
+		8 (495) 431-71-11</h5></div>
 	</footer>
 </body>
 </html>
